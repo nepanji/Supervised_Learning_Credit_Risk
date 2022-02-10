@@ -24,29 +24,27 @@ highest recall rate (% of bad credit classified as bad) with the least amount of
 
 ## LogisticRegression model and RandomForestClassifier Model 
 ### Model Comparisons (Unscaled data)
+![Screen Shot 2022-02-10 at 4 31 02 PM](https://user-images.githubusercontent.com/89491352/153500419-71e8371d-d347-48c1-8d49-4ba2e42b1fdd.png)
 The LogisticRegression model of unscaled data produces an accuracy score of 52%. The precision score for high risk is 53% and low risk is 51%. 
 The sensitivity score for high risk is 30% and low risk is 73%. This model is not ideal based on the fact that the percentage of correct predictions is at 52%, 
 the percentage of correct positive predictions for both risk types is between 51%-53% which is less than ideal , and the percentage of correct actual positive 
 results is low for high risk. This model produced the second highest number of false negatives at 1640. 
 
+![Screen Shot 2022-02-10 at 4 31 16 PM](https://user-images.githubusercontent.com/89491352/153500485-09d74dfa-52f9-47df-8b9d-c5953fefcd31.png)
 The RandomForestClassifier model of unscaled data produces an accuracy score of 64%. The precision score for high risk is 61% and low risk is 71%. 
 The sensitivity score for high risk is 80% and low risk is 48%. This model is a better option than LogisticRegression based on the fact that the percentage of 
 correct predictions is at 64% and better than 52%, the percentage of correct positive predictions for high risk types is 80% which is more ideal than 
 the LogisticRegression model. This model produced the least number of false negatives at 463.
 
 ### Model Comparisons (Unscaled data)
-The LogisticRegression model of scaled data produces an accuracy score of 77%. The precision score for high risk is 77% and low risk is 76%. The sensitivity score 
-for high risk is 76% and low risk is 77%. This model is ideal based on the fact that the percentage of correct predictions is at 77%, the percentage of correct 
-positive predictions for both risk types is between 76%-77% which is also better, and this model produced a low Type II error of 562; therefore, reducing the 
-costly number of bad credit misclassifications as good.
+![Screen Shot 2022-02-10 at 4 31 29 PM](https://user-images.githubusercontent.com/89491352/153500541-09e46881-cfca-4a57-85d7-66c22d14d904.png)
+The LogisticRegression model of scaled data produces an accuracy score of 77%. The precision score for high risk is 77% and low risk is 76%. The sensitivity score for high risk is 76% and low risk is 77%. This model is ideal based on the fact that the percentage of correct predictions is at 77%, the percentage of correct positive predictions for both risk types is between 76%-77% which is also better, and this model produced a low Type II error of 562; therefore, reducing the costly number of bad credit misclassifications as good.
 
-The RandomForestClassification model of scaled data produces an accuracy score of 50%. The precision score for both high and low risk is 50%. The sensitivity score 
-for high risk is 21% and low risk is 79%. This model is not ideal based on the fact that the percentage of correct predictions is at 50%, the percentage of correct 
-positive predictions for both risk types is between 50% which is not ideal , and the percentage of correct actual positive results is very low for high risk. 
-This model produced the highest number of false negatives at 1848; whereby, creating the most costly number of bad credit misclassification as good.
+![Screen Shot 2022-02-10 at 4 33 38 PM](https://user-images.githubusercontent.com/89491352/153500671-977a5b47-90b7-493a-ad4a-bc0b52a77050.png)
+The RandomForestClassification model of scaled data produces an accuracy score of 50%. The precision score for both high and low risk is 50%. The sensitivity score for high risk is 21% and low risk is 79%. This model is not ideal based on the fact that the percentage of correct predictions is at 50%, the percentage of correct positive predictions for both risk types is between 50% which is not ideal , and the percentage of correct actual positive results is very low for high risk. This model produced the highest number of false negatives at 1848; whereby, creating the most costly number of bad credit misclassification as good.
 
 ## Conclusion
-Examing the above results showed that the LogisticRegression model of scaled data has a accuracy of 77%, meaning 7.7 out of 10 risks were identified correctly. This
-model was also 77% precise when labeling high risk and low risk borrowers and 77% sensitive, meaning that 2.3 out of every 10 risks were missed by the model and 23%
-of high and low risks are miss labeled. Additionally, this model produced a low number of false negatives and false positives, meaning there is a low occurance of
-bad credit misclassifications as good and a low number of good credit misclassifications as bad. 
+Examing the above results showed that the LogisticRegression model of scaled data has a accuracy of 77%, meaning 7.7 out of 10 risks were identified correctly. This model was also 77% precise when labeling high risk and low risk borrowers and 77% sensitive, meaning that 2.3 out of every 10 risks were missed by the model and 23% of high and low risks are miss labeled. Additionally, this model produced a low number of false negatives and false positives, meaning there is a low occurance of bad credit misclassifications as good and a low number of good credit misclassifications as bad. 
+
+
+
