@@ -50,5 +50,7 @@ The RandomForestClassification model of scaled data produces an accuracy score o
 ## Conclusion
 Examing the above results showed that the LogisticRegression model of scaled data has a accuracy of 77%, meaning 7.7 out of 10 risks were identified correctly. This model was also 77% precise when labeling high risk and low risk borrowers and 77% sensitive, meaning that 2.3 out of every 10 risks were missed by the model and 23% of high and low risks are miss labeled. Additionally, this model produced a low number of false negatives and false positives, meaning there is a low occurance of bad credit misclassifications as good and a low number of good credit misclassifications as bad. 
 
+NOTE: My attempt to further use the Oversampling and SMOTE (Synthetic Minority Over-sampling Technique) techniques proved unsuccessful. 
+
 
 
